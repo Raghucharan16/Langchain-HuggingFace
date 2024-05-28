@@ -10,4 +10,4 @@ model = AutoModelForCausalLM.from_pretrained(
 )
 pipe = pipeline("text-generation", model=model, tokenizer=tokenizer, max_new_tokens=100, top_k=50, temperature=0.1)
 llm = HuggingFacePipeline(pipeline=pipe)
-llm.invoke("Hugging Face is")
+llm.invoke("what is huggingface") #Ask your question
